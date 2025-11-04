@@ -33,7 +33,6 @@ const TaskListPage = () => {
         setTodos(prev => prev.map(t => t.id === id ? updated : t));
     };
 
-
     // Delete a todo
     const handleDelete = async (id) => {
         await deleteTodo(id);
