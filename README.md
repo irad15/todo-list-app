@@ -17,7 +17,7 @@ A simple full-stack todo application built with **Java Spring Boot** (backend) a
 
  Make sure you have installed:
 
-- **Java 25+** - [Download here](https://adoptium.net/) (project targets Java 25 in `pom.xml`)
+- **Java 25+** - [Download here](https://www.oracle.com/il-en/java/technologies/downloads/) (project targets Java 25 in `pom.xml`)
 - **Maven** (or use included wrapper)
 - **Node.js 18+** - [Download here](https://nodejs.org/)
 
