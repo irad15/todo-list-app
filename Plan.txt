@@ -1,0 +1,43 @@
+todo-list/
+├── frontend/                # Vite + React app
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── main.jsx          # React entry point, mounts App
+│       ├── App.jsx           # Defines routes with React Router
+│       ├── api/              # Backend API calls
+│       │   └── todos.js      # Functions for GET, POST, PUT, DELETE /todos
+│       ├── pages/            # Full pages
+│       │   ├── TaskListPage.jsx  # Lists all tasks, add, delete, toggle completed, navigate to single task
+│       │   └── TaskPage.jsx      # Displays a single task, edit title/status, save changes
+│       ├── components/       # Reusable components
+│       │   └── TaskItem.jsx  # Represents one task in the list
+│       └── assets/
+│           └── react.svg
+│
+├── src/                                 # Backend folder (Spring Boot)
+│   ├── main/
+│   │   ├── java/com/irad/todo/          # Java package for backend
+│   │   │   ├── model/                   # Data classes / entities
+│   │   │   │   └── Todo.java            # Todo object: id, title, completed
+│   │   │   ├── service/                 # Business logic layer
+│   │   │   │   └── TodoService.java     # In-memory CRUD operations
+│   │   │   ├── controller/              # REST endpoints
+│   │   │   │   └── TodoController.java  # API endpoints for frontend
+│   │   │   └── TodoListApplication.java # Spring Boot main class
+│   │   └── resources/                    # Configuration and resource files
+│   │       ├── application.properties   # Backend configuration (ports, etc.)
+│   │       └── (optional static/ or templates/)
+│   └── test/                             # Unit tests
+│       └── java/com/irad/todo/
+│           └── TodoListApplicationTests.java # Basic Spring Boot test class
+│
+├── pom.xml                              # Maven dependencies and project config
+├── mvnw / mvnw.cmd                      # Maven wrapper scripts for consistent builds
+├── .mvn/                                # Maven wrapper folder
+├── .idea/                               # IntelliJ project files
+├── .gitignore                           # Git ignore rules (files to skip)
+├── .gitattributes                       # Git attribute settings (line endings, etc.)
+├── README.md                             # Project instructions and setup guide
+├── plan.txt                              # Updated plan with frontend structure
